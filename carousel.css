@@ -159,24 +159,36 @@ body {
 
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.41);
-    border-radius: 55px;
+    border-radius: 25px;
     padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#promo{
+    position: absolute;
+    top: 370px;
+    right: 30px;
+}
+
+#promo > img.stores{
+    width: 175px;
 }
 
 .item:nth-child(1) .carousel-caption {
-    top: 33%;
-    right: 9%;
+    top: 29%;
+    right: 10%;
     bottom: auto;
-    left: 43%;  
+    left: 33%;
 }
 .item:nth-child(2) .carousel-caption {
-    top: 19%;
-    right: 40%;
-    bottom:auto;
-    left: 12%;
+    top: 31%;
+    right: 35%;
+    bottom: auto;
+    left: 14%;
 }
 .item:nth-child(3) .carousel-caption {
-    top: 19%;
+    top: 33%;
     right: 11%;
     bottom: auto;
     left: 41%;
@@ -193,19 +205,78 @@ body {
     }
 }
 
+@media screen and (min-width: 1025px) and (max-width: 1549px){
+    .item:nth-child(1) .carousel-caption {
+        top: 30%;
+        right: 12%;
+        bottom: auto;
+        left: 44%;
+    }
+    .item:nth-child(2) .carousel-caption {
+        top: 34%;
+        right: 46%;
+        bottom: auto;
+        left: 17%;
+    }
+    .item:nth-child(3) .carousel-caption {
+        top: 35%;
+        right: 19%;
+        bottom: auto;
+        left: 45%;
+    }
+}
+
 @media screen and (min-width: 1550px){
     .item:nth-child(1) .carousel-caption,
     .item:nth-child(2) .carousel-caption,
     .item:nth-child(3) .carousel-caption {
-        top: 28%;
-        right: 30%;
+        max-width: 30%;
+    }
+
+    .item:nth-child(1) .carousel-caption {
+        top: 30%;
+        right: 31%;
         bottom: auto;
-        left: 30%;
+        left: 41%;
+    }
+    .item:nth-child(2) .carousel-caption {
+        top: 34%;
+        right: 45%;
+        bottom: auto;
+        left: 31%;
+    }
+    .item:nth-child(3) .carousel-caption {
+        top: 35%;
+        right: 31%;
+        bottom: auto;
+        left: 45%;
+    }
+
+    .carousel .item {
+        background-color: rgba(119, 119, 119, 0.20);
+    }
+
+    .carousel-control {
+        left: 25%;
+        width:6%;
+    }
+    .carousel-control.right{
+        right: 25%;
+        width:8%;
+    }
+    #promo {
+        right: 25.5%;
     }
 }
 
 .carousel-indicators {
     bottom: 15px;
+}
+
+.navbar-inverse {
+    background-color: rgba(34, 34, 34, 0.56);
+    border-color: #E76C9D;
+    border-bottom-width: 2px;
 }
 
 /*.carousel-control.left {
