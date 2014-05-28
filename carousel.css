@@ -153,6 +153,11 @@ body {
     }
 }
 
+@font-face {
+    font-family: "IndieFlower";
+    src: url('../fonts/IndieFlower.ttf');
+}
+
 .container.marketing .title{
     margin-bottom: 3rem;
 }
@@ -173,6 +178,20 @@ body {
 
 #promo > img.stores{
     width: 175px;
+}
+
+.navbar-header{
+    width: 100%;
+    
+}
+
+.navbar-header h2{
+    color: #E76C9D;
+    font-size: 22px;
+    line-height: 1.8rem;
+    font-family: "IndieFlower";
+    float: left;
+    margin-left: 1rem;
 }
 
 .item:nth-child(1) .carousel-caption {
@@ -202,6 +221,12 @@ body {
         right: 15%;
         bottom: auto;
         left: 15%;
+    }
+}
+
+@media screen and (max-width: 991px){
+    #myCarousel{
+        margin-top: -140px;
     }
 }
 
